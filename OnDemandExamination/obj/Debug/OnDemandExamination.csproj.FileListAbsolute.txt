@@ -1,0 +1,13 @@
+C:\Users\dell-pc\Documents\Visual Studio 2017\Projects\OnDemandExamination\OnDemandExamination\bin\OnDemandExamination.dll.config
+C:\Users\dell-pc\Documents\Visual Studio 2017\Projects\OnDemandExamination\OnDemandExamination\bin\OnDemandExamination.dll
+C:\Users\dell-pc\Documents\Visual Studio 2017\Projects\OnDemandExamination\OnDemandExamination\bin\OnDemandExamination.pdb
+C:\Users\dell-pc\Documents\Visual Studio 2017\Projects\OnDemandExamination\OnDemandExamination\obj\Debug\OnDemandExamination.csprojAssemblyReference.cache
+C:\Users\dell-pc\Documents\Visual Studio 2017\Projects\OnDemandExamination\OnDemandExamination\obj\Debug\OnDemandExamination.csproj.CoreCompileInputs.cache
+C:\Users\dell-pc\Documents\Visual Studio 2017\Projects\OnDemandExamination\OnDemandExamination\obj\Debug\OnDemandExamination.dll
+C:\Users\dell-pc\Documents\Visual Studio 2017\Projects\OnDemandExamination\OnDemandExamination\obj\Debug\OnDemandExamination.pdb
+D:\Local E\Disk F\project bca\my project data 2\My Project Data\project with database\OnDemandExamination\OnDemandExamination\bin\OnDemandExamination.dll.config
+D:\Local E\Disk F\project bca\my project data 2\My Project Data\project with database\OnDemandExamination\OnDemandExamination\bin\OnDemandExamination.dll
+D:\Local E\Disk F\project bca\my project data 2\My Project Data\project with database\OnDemandExamination\OnDemandExamination\bin\OnDemandExamination.pdb
+D:\Local E\Disk F\project bca\my project data 2\My Project Data\project with database\OnDemandExamination\OnDemandExamination\obj\Debug\OnDemandExamination.csprojAssemblyReference.cache
+D:\Local E\Disk F\project bca\my project data 2\My Project Data\project with database\OnDemandExamination\OnDemandExamination\obj\Debug\OnDemandExamination.dll
+D:\Local E\Disk F\project bca\my project data 2\My Project Data\project with database\OnDemandExamination\OnDemandExamination\obj\Debug\OnDemandExamination.pdb

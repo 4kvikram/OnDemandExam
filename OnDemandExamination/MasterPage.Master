@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="OnDemandExamination.MasterPage" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 0px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        
+<div id="container">
+
+<div id="sitename"  style="color:darkcyan">
+<h1 class="center">ON DEMAND EXAMINATION</h1>
+<h2>A Chance To Learn Is A Chance To Grow And You Are Growing.............</h2>
+</div>
+
+<div id="mainmenu">
+<ul>
+<li><a href="HomePage.aspx">Home</a></li>
+<li><a href="AboutUsPage.aspx">About Us</a></li>
+<li><a href="LogInPage.aspx">Login</a></li>
+<li><a href="ContactUsPage.aspx">Contact</a></li>
+<li><a href="RegistrationPage.aspx">Registration</a></li>
+</ul>
+</div>
+ 
+<div id="wrap">
+
+<div id="leftside">
+    
+
+
+    <asp:Image ID="Image1" runat="server" Height="386px" ImageUrl="~/img/exam3.png" Width="187px" />
+    
+
+
+</div>
+
+<div id="rightside">
+   
+    <asp:Image ID="Image2" runat="server" CssClass="auto-style1" Height="386px" ImageUrl="~/img/exam.jpg" Width="187px" />
+   
+</div>
+        <div id="content">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+      
+
+    </asp:ContentPlaceHolder>
+
+    </div>
+<div class="clearingdiv">&nbsp;</div>
+</div>
+</div>
+<div id="footer">© 2019 On Demand Examination<br />
+    Design by Vikram<br />
+    Enrollment No.-167177089
+
+<br />
+    &nbsp;&nbsp;
+
+</div>
+  
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,387 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2FA2617-82A7-442E-A635-176C0075E510}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnDemandExamination</RootNamespace>
+    <AssemblyName>OnDemandExamination</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AddTeachersPage.aspx" />
+    <Content Include="Admin\AdminHomePage.aspx" />
+    <Content Include="Admin\ExamSettingPage.aspx" />
+    <Content Include="Admin\img\bodybg.jpg" />
+    <Content Include="Admin\img\colors.jpg" />
+    <Content Include="Admin\img\exam5.jpg" />
+    <Content Include="Admin\SeeQuestionPage.aspx" />
+    <Content Include="img\exam.jpg" />
+    <Content Include="img\exam2.jpg" />
+    <Content Include="img\exam3.png" />
+    <Content Include="Admin\img\footerbg.jpg" />
+    <Content Include="Admin\img\menuhover.jpg" />
+    <Content Include="Admin\img\thumb1.jpg" />
+    <Content Include="Admin\ManageCityPage.aspx" />
+    <Content Include="Admin\ManageCoursePage.aspx" />
+    <Content Include="Admin\ManageProgramPage.aspx" />
+    <Content Include="Admin\ManageQuestion.aspx" />
+    <Content Include="Admin\ManageStatePage.aspx" />
+    <Content Include="Admin\StudentExamRequest.aspx" />
+    <Content Include="Admin\StudentListPage.aspx" />
+    <Content Include="Admin\StudentResultPage.aspx" />
+    <Content Include="Admin\style.css" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="Admin\AdminMasterPage.Master" />
+    <Content Include="RegistrationConfirmPage.aspx" />
+    <Content Include="User\ApplyExamPage.aspx" />
+    <Content Include="User\CertificatePage.aspx" />
+    <Content Include="User\CheckResultPage.aspx" />
+    <Content Include="User\EditProfile.aspx" />
+    <Content Include="User\EXAM.aspx" />
+    <Content Include="User\ExamFinishMessagePage.aspx" />
+    <Content Include="User\ExamRequestConfirmPage.aspx" />
+    <Content Include="User\img\exam5.jpg" />
+    <Content Include="User\img\signature.jpg" />
+    <Content Include="User\ProfileUserPage.aspx" />
+    <Content Include="User\TakeExam.aspx" />
+    <Content Include="User\UserHomePage.aspx" />
+    <Content Include="User\img\bodybg.jpg" />
+    <Content Include="User\img\colors.jpg" />
+    <Content Include="User\img\footerbg.jpg" />
+    <Content Include="User\img\menuhover.jpg" />
+    <Content Include="User\img\thumb1.jpg" />
+    <Content Include="User\style.css" />
+    <Content Include="User\UserMasterPage.Master" />
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUsPage.aspx" />
+    <Content Include="ContactUsPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="img\bodybg.jpg" />
+    <Content Include="img\colors.jpg" />
+    <Content Include="img\footerbg.jpg" />
+    <Content Include="img\menuhover.jpg" />
+    <Content Include="img\thumb1.jpg" />
+    <Content Include="LogInPage.aspx" />
+    <Content Include="RegistrationPage.aspx" />
+    <Content Include="style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUsPage.aspx.cs">
+      <DependentUpon>AboutUsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUsPage.aspx.designer.cs">
+      <DependentUpon>AboutUsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddTeachersPage.aspx.cs">
+      <DependentUpon>AddTeachersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddTeachersPage.aspx.designer.cs">
+      <DependentUpon>AddTeachersPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHomePage.aspx.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHomePage.aspx.designer.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMasterPage.Master.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMasterPage.Master.designer.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ExamSettingPage.aspx.cs">
+      <DependentUpon>ExamSettingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ExamSettingPage.aspx.designer.cs">
+      <DependentUpon>ExamSettingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCityPage.aspx.cs">
+      <DependentUpon>ManageCityPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCityPage.aspx.designer.cs">
+      <DependentUpon>ManageCityPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCoursePage.aspx.cs">
+      <DependentUpon>ManageCoursePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCoursePage.aspx.designer.cs">
+      <DependentUpon>ManageCoursePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageProgramPage.aspx.cs">
+      <DependentUpon>ManageProgramPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageProgramPage.aspx.designer.cs">
+      <DependentUpon>ManageProgramPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageQuestion.aspx.cs">
+      <DependentUpon>ManageQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageQuestion.aspx.designer.cs">
+      <DependentUpon>ManageQuestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageStatePage.aspx.cs">
+      <DependentUpon>ManageStatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageStatePage.aspx.designer.cs">
+      <DependentUpon>ManageStatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SeeQuestionPage.aspx.cs">
+      <DependentUpon>SeeQuestionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SeeQuestionPage.aspx.designer.cs">
+      <DependentUpon>SeeQuestionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentExamRequest.aspx.cs">
+      <DependentUpon>StudentExamRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentExamRequest.aspx.designer.cs">
+      <DependentUpon>StudentExamRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentListPage.aspx.cs">
+      <DependentUpon>StudentListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentListPage.aspx.designer.cs">
+      <DependentUpon>StudentListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentResultPage.aspx.cs">
+      <DependentUpon>StudentResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentResultPage.aspx.designer.cs">
+      <DependentUpon>StudentResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\DataClassesDataContext.cs" />
+    <Compile Include="ContactUsPage.aspx.cs">
+      <DependentUpon>ContactUsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUsPage.aspx.designer.cs">
+      <DependentUpon>ContactUsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInPage.aspx.cs">
+      <DependentUpon>LogInPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogInPage.aspx.designer.cs">
+      <DependentUpon>LogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationConfirmPage.aspx.cs">
+      <DependentUpon>RegistrationConfirmPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationConfirmPage.aspx.designer.cs">
+      <DependentUpon>RegistrationConfirmPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationPage.aspx.cs">
+      <DependentUpon>RegistrationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationPage.aspx.designer.cs">
+      <DependentUpon>RegistrationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ApplyExamPage.aspx.cs">
+      <DependentUpon>ApplyExamPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ApplyExamPage.aspx.designer.cs">
+      <DependentUpon>ApplyExamPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\CertificatePage.aspx.cs">
+      <DependentUpon>CertificatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\CertificatePage.aspx.designer.cs">
+      <DependentUpon>CertificatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\CheckResultPage.aspx.cs">
+      <DependentUpon>CheckResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\CheckResultPage.aspx.designer.cs">
+      <DependentUpon>CheckResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EXAM.aspx.cs">
+      <DependentUpon>EXAM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EXAM.aspx.designer.cs">
+      <DependentUpon>EXAM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ExamFinishMessagePage.aspx.cs">
+      <DependentUpon>ExamFinishMessagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ExamFinishMessagePage.aspx.designer.cs">
+      <DependentUpon>ExamFinishMessagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ExamRequestConfirmPage.aspx.cs">
+      <DependentUpon>ExamRequestConfirmPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ExamRequestConfirmPage.aspx.designer.cs">
+      <DependentUpon>ExamRequestConfirmPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ProfileUserPage.aspx.cs">
+      <DependentUpon>ProfileUserPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ProfileUserPage.aspx.designer.cs">
+      <DependentUpon>ProfileUserPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\TakeExam.aspx.cs">
+      <DependentUpon>TakeExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\TakeExam.aspx.designer.cs">
+      <DependentUpon>TakeExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserHomePage.aspx.cs">
+      <DependentUpon>UserHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserHomePage.aspx.designer.cs">
+      <DependentUpon>UserHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserMasterPage.Master.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserMasterPage.Master.designer.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60356</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60356/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

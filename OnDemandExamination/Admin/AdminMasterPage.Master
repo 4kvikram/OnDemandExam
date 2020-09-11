@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="OnDemandExamination.Admin.AdminMasterPage" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        
+<div id="container">
+<div id="sitename"  style="color:darkcyan">
+    <div class="right"> 
+    <asp:Label ID="lbluserName" runat="server"></asp:Label>
+</div>
+<h1 class="center">ON DEMAND EXAMINATION</h1>
+<h2>A Chance To Learn Is A Chance To Grow And You Are Growing.............</h2>
+</div>
+
+<div id="mainmenu">
+<ul>
+<li><a  href="AdminHomePage.aspx">Home</a></li>
+
+<li>
+    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li>
+</ul>
+</div>
+ 
+<div id="wrap">
+
+<div id="leftside">
+<p><a class="nav" href="ManageProgramPage.aspx">Manage Program</a><span class="hide"> | </span>
+<a class="nav" href="ManageCoursePage.aspx">Manage Course</a><span class="hide"> | </span>
+<a class="nav" href="ManageStatePage.aspx">Manage State</a><span class="hide"> | </span>
+<a class="nav" href="ManageCityPage.aspx">Manage City</a><span class="hide"> | </span>
+<a class="nav" href="ManageQuestion.aspx">Manage Question</a><span class="hide"> | </span>
+    <a class="nav sub" href="StudentExamRequest.aspx">Student Exam Request</a><span class="hide"> | </span>
+<a class="nav sub" href="StudentListPage.aspx">Student List</a><span class="hide"> | </span>
+<a class="nav sub" href="StudentResultPage.aspx">Student Results</a><span class="hide"> | </span>
+<a class="nav sub" href="ExamSettingPage.aspx">Exam Setting</a></p>
+<a class="nav" href="AddTeachersPage.aspx">ADD TEACHERS</a><span class="hide"> | </span>
+<ul class="linklist">
+
+</ul>
+</div>
+
+<div id="rightside">
+
+</div>
+        <div id="content">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+    </div>
+<div class="clearingdiv">&nbsp;</div>
+</div>
+</div>
+<div id="footer">© 2019 On Demand Examination<br />
+    Design by Vikram<br />
+    Enrollment No.-167177089
+
+<br />
+    &nbsp;&nbsp;
+
+</div>
+
+    </form>
+</body>
+</html>

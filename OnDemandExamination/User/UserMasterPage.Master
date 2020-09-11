@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMasterPage.master.cs" Inherits="OnDemandExamination.User.UserMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        
+<div id="container">
+
+<div id="sitename"  style="color:darkcyan">
+      <div class="right"> 
+    <asp:Label ID="lbluserName" runat="server"></asp:Label>
+</div>
+<h1 class="center">ON DEMAND EXAMINATION</h1>
+<h2>A Chance To Learn Is A Chance To Grow And You Are Growing.............</h2>
+</div>
+
+<div id="mainmenu">
+<ul>
+<li><a href="UserHomePage.aspx">Home</a></li>
+    
+<li><a href="ProfileUserPage.aspx">My Profile</a></li>
+    
+    <li> <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li>
+</ul>
+</div>
+ 
+<div id="wrap">
+
+<div id="leftside" >
+<p>
+    <span class="hide"> &nbsp;| </span>
+<a class="nav" href="ApplyExamPage.aspx">Apply for Exam</a><span class="hide"> | </span>
+<a class="nav" href="TakeExam.aspx">Exam</a><span class="hide"> | </span>
+<a class="nav sub" href="CheckResultPage.aspx">Check Result</a><span class="hide"> | </span>
+<a class="nav sub" href="CertificatePage.aspx">Certificate</a><span class="hide"> | </span>
+
+
+
+</div>
+    <div id="rightside">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+
+
+
+
+    </asp:ContentPlaceHolder>
+        </div>
+        <div id="content">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        <p>
+            &nbsp;</p>
+
+    </asp:ContentPlaceHolder>
+
+    </div>
+<div class="clearingdiv">&nbsp;</div>
+</div>
+</div>
+<div id="footer">© 2019 On Demand Examination<br />
+    Design by Vikram<br />
+    Enrollment No.-167177089
+
+<br />
+    &nbsp;&nbsp;
+
+</div>
+
+    </form>
+</body>
+</html>
